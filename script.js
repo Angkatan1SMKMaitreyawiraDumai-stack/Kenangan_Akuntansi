@@ -135,15 +135,24 @@ lightMode.addEventListener("click", function () {
 });
 
 // Mobile Navigation Toggle
-document.querySelector(".hamburger").addEventListener("click", function () {
-  document.querySelector(".nav-links").classList.toggle("active");
-});
-// Close mobile menu when clicking a link
-document.querySelectorAll(".nav-links a").forEach((link) => {
-  link.addEventListener("click", () => {
-    document.querySelector(".nav-links").classList.remove("active");
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.getElementById('nav-menu');
+
+if (navToggle && navMenu) {
+  navToggle.addEventListener('click', () => {
+    navToggle.classList.toggle('toggle');
+    navMenu.classList.toggle('nav-active');
   });
-});
+
+  // Close menu when clicking on a link
+  const navLinks = navMenu.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navToggle.classList.remove('toggle');
+      navMenu.classList.remove('nav-active');
+    });
+  });
+}
 
 const messagecard = document.querySelectorAll(".message-card");
 messagecard.forEach((card) => {
@@ -154,7 +163,7 @@ messagecard.forEach((card) => {
     const message = messagesArray[messageIndex];
 
     // Hide header when modal is open
-    const header = document.querySelector("header");
+    const header = document.querySelector("header, nav.navbar");
     header.classList.add("header-hidden");
 
     // Create modal overlay
@@ -316,7 +325,7 @@ messagecard.forEach((card) => {
 
 // Header scroll effect
 window.addEventListener("scroll", function () {
-  const header = document.querySelector("header");
+  const header = document.querySelector("header, nav.navbar");
 
   if (window.scrollY > 100) {
     header.classList.add("scrolled");
