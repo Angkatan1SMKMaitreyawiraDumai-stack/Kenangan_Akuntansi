@@ -1968,7 +1968,7 @@ footer {
 
   .nav-menu {
     position: fixed;
-    top: 8%;
+    top: 11%;
     left: -100%;
     flex-direction: column;
     background-color: rgba(142, 125, 190, 0.98);
@@ -1984,7 +1984,7 @@ footer {
 
   .nav-menu.nav-active {
     left: 50%;
-    top: 8%;
+    top: 11%;
   }
 
   .nav-link {
@@ -3283,23 +3283,63 @@ body.dark-mode .message-modal-close {
     align-items: flex-start;
   }
 
+  .footer-school-name {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .footer-tagline {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
   .footer-socials {
     justify-content: flex-start;
+    gap: 1.2rem;
+    margin-top: 1rem;
+  }
+
+  .footer-social-link {
+    width: 42px;
+    height: 42px;
+    font-size: 1.1rem;
+  }
+
+  .footer-title {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
   }
 
   .footer-contact-item {
     justify-content: flex-start;
+    gap: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .footer-contact-item i {
+    font-size: 1.1rem;
   }
 
   .footer-links {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 0.5rem 1.5rem;
+    flex-direction: column;
+    gap: 0.8rem;
   }
 
   .footer-links li {
     margin-bottom: 0;
+  }
+
+  .footer-links a {
+    font-size: 1rem;
+    padding: 0.3rem 0;
+  }
+
+  .footer-bottom {
+    padding: 2rem 5% 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.8;
   }
 }
 
