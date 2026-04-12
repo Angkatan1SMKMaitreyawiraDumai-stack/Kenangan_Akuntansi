@@ -16,26 +16,34 @@
   </head>
   <body>
     <!-- Header & Navigation -->
-    <header>
-      <a href="#" class="logo">
-        <span class="logo-icon">
-          <img src="WhatsApp Image 2026-04-04 at 14.09.54.jpeg" alt="" />
-        </span>
-        <p>SMK MAITREYAWIRA</p>
-      </a>
-      <ul class="nav-links">
-        <li><a href="https://angkatan1smkmaitreyawiradumai-stack.github.io/Kenangan_Beranda/">Beranda</a></li>
-        <li><a href="https://angkatan1smkmaitreyawiradumai-stack.github.io/Kenangan_TKJ/">TKJ</a></li>
-        <li><a href="#home">Akuntansi</a></li>
-        <li><a href="https://angkatan1smkmaitreyawiradumai-stack.github.io/Kenangan_Album/">Album</a></li>
-      </ul>
-
-      <button class="light-mode" id="light-toggle">
-        <i class="fas fa-moon" id="light-icon"></i>
-      </button>
-
-      <button class="hamburger">☰</button>
-    </header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="WhatsApp Image 2026-04-04 at 14.09.54.jpeg" alt="" class="logo-img">
+          <a href="#home" class="nav-logo-text">SMK Maitreyawira</a>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="https://angkatan1smkmaitreyawiradumai-stack.github.io/Kenangan_Beranda/" class="nav-link active">Beranda</a>
+          <a href="https://angkatan1smkmaitreyawiradumai-stack.github.io/Kenangan_TKJ/" class="nav-link">TKJ</a>
+          <a href="#home" class="nav-link">Akuntansi</a>
+          <a href="" class="nav-link">Album</a>
+        </div>
+        <div class="nav-mode-toggle">
+          <button class="light-mode" id="light-toggle">
+            <i class="fas fa-moon" id="light-icon"></i>
+          </button>
+        </div>
+        <div
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
